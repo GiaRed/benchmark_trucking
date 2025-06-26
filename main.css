@@ -1,0 +1,522 @@
+/* General Styles  */
+
+html { 
+     margin: auto;
+     font-size: 20px;
+     margin: auto;
+}
+
+.section {
+     padding: 2rem 1.5rem
+}
+
+.nav-ul {
+     list-style: none;
+}
+
+.nav-li a {
+     text-decoration: none;
+     color: rgba(0, 0, 0, 80%)
+}
+
+h1, h2, h3 {
+font-family: "Anuphan", sans-serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: semibold;
+}
+
+h2, h3 {
+     text-transform: uppercase;
+     padding: 1.25rem 0;
+}
+
+p, li, span, .button {
+font-family: "Anuphan", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+.button {
+     background-color: #0097FF;
+     border: none;
+     display: inline-block;
+     padding: 15px 32px;
+     margin: 4px 2px;
+     cursor: pointer;
+}
+/* 
+.button:hover {
+     transform: scale(1.1) .3s;
+} */
+
+.button-text {
+     color: white;
+     text-align: center;
+     text-decoration: none;
+     font-size: 1rem;
+}
+
+.hero-section {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url(/images/header_bg.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+.hero-heading {
+     color: #fff;
+}
+
+.divider {
+     border-top: .25rem solid #0097FF;
+     margin-bottom: .5rem;
+     padding: .5rem;
+}
+
+.action-buttons-container {
+     padding: 2rem 0;
+     margin: auto;
+     width: 80%;
+     display: flex;
+     align-content: center;
+     justify-content: space-around;
+}
+
+.image-placeholder {
+     border: .25rem grey solid;
+     background-color: #00b;
+}
+
+.bio-container, .bio-body {
+     display: flex;
+     background-color: #fff;
+     padding: 1rem;
+}
+
+.bio-heading, .bio-p {
+     padding: 0;
+     color: #000;
+}
+
+.contact-link {
+     text-decoration: none;
+     color:#0097FF;
+}
+
+.gallery-image {
+     object-fit: cover;
+}
+
+.contact-section {
+     /* background-image: url(/images/footer_bg.jpg); */
+     background-color: rgba(0, 0, 0, 80%);
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+.contact-divider {
+     margin: auto;
+     width: 30%;
+}
+
+.white-text {
+     color: #fff;
+}
+
+/* * Mobile First Styling */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 480px) {
+
+
+     /* ! For Dev purposes, delete later */
+     /* html {
+          background-color: greenyellow;
+     } */
+
+     /* Header Styling */
+
+     .header {
+          padding: 1.5rem 1rem;
+     }
+
+     .header-logo {
+          width: 60%;
+     }
+
+     .nav {
+          display: none;
+     }
+
+     /* Hero Section Styling */
+
+     .hero-section {
+
+          height: 20rem;
+     }
+
+     .hero-heading {
+          text-align: center;
+          text-transform: uppercase;
+     }
+
+     /* Who We Are Styling */
+
+     .who-we-are-p {
+          padding: .5rem 0;
+     }
+
+     /* .who-we-are-heading {
+          padding: 1rem 0;
+     } */
+
+     .who-we-are-divider {
+          margin: auto;
+          width: 18rem;
+     }
+
+     .who-we-are-img {
+          visibility: hidden;
+     }
+
+     /* .who-we-are-buttons {
+
+     } */
+
+     /* Our Missions & Vision Styling */
+
+     .our-mission-heading {
+          text-align: left;
+     }
+
+     .our-mission-body {
+          margin: auto;
+          width: 90%;
+     }
+
+     .our-mission-body .our-mission-heading {
+          text-align: left;
+          width: 90%
+     }
+
+     .our-mission-img {
+          visibility: hidden;
+     }
+
+     /* Our People Styling */
+
+     .our-people-section {
+          background-color: rgba(0, 0, 0, 80%);
+          display: flex;
+     }
+
+     .our-people-container {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .our-people-container h2, .our-people-container h3, .our-people-container p {
+          color:#000;
+          text-align: center;
+     }
+
+     .bio-container, .bio-body {
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+          padding: 1rem;
+     }
+
+     .bio-container {
+          align-items: center;
+          justify-content: center;
+     }
+
+     .bio-body {
+          padding: 1rem .5rem;
+          flex-direction: column;
+          align-content: center;
+     }
+
+     .bio-image-placeholder {
+          width: 10rem;
+          height: 12rem;
+     }
+
+     .bio-body {
+          width: 75%
+     }
+
+
+     /* Gallery Styling */
+
+     .gallery-container {
+          width: 100%;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+     }
+
+     .gallery-image-container {
+          width: 80%;
+          height: 15rem;
+     }
+
+     .gallery-image {
+          width: 100%;
+          height: 100%;
+     }
+
+     /* Contact Section Styling */
+
+     .contact-section {
+          text-align: center;
+     }
+
+     /* Footer Section */
+
+     .footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(0, 0, 0, 80%);
+          height: 5rem;
+          color: #fff;
+     }
+
+}
+
+/* * Tablet Styling */
+
+/* @media only screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 480px) {
+
+} */
+
+
+/* * Desktop Styling */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 480px) {
+
+     html {
+     font-size: 18px;
+     width: 80%;
+     max-width: 120rem;
+     margin: auto;
+     }
+
+     .section {
+          padding: 1rem 1.5rem;
+     }
+
+     .section-50 {
+          width: 50%;
+          align-content: center;
+     }
+
+     .who-we-are-section, .our-mission-section {
+          padding: 1rem 0;
+     }
+
+     .who-we-are-section {
+          padding: .5rem 1rem;
+     }
+
+     /* Header Styling */
+
+     .header {
+          padding: 2rem 1rem;
+          display: grid;
+          width: 100%;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+     }
+
+     .header-logo {
+          align-self: flex-start;
+          width: 30rem;
+          grid-column: 1;
+     }
+     .nav {
+          margin: auto;
+          align-self: flex-end;
+          grid-column: 3;
+     }
+
+     .nav-ul {
+          display: flex;
+          list-style: none;
+          justify-content: space-between;
+     }
+
+     .nav-li {
+          font-size: 1rem;
+          padding-right: 1rem;
+     }
+
+     /* Hero Section Styling */
+
+     .hero-section {
+
+          height: 30rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: yellow;
+     }
+
+     .hero-heading {
+          text-align: center;
+          text-transform: uppercase;
+     }
+
+     /* Who We Are + Our Missions & Vision Styling */
+
+     .who-we-are-img, .our-mission-img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: left;
+     }
+
+
+
+     .who-we-are-section, .our-mission-section {
+          display: flex;
+     }
+
+     .who-we-are-left, .our-mission-right {
+          width: 50%;
+     }
+
+     .who-we-are-p {
+          padding: .5rem 0;
+     }
+
+     .who-we-are-divider {
+          width: 9rem;
+     }
+
+     /* .who-we-are-buttons {
+
+     } */
+
+     /* Our Missions & Vision Styling */
+
+     .our-mission-section {
+          flex-direction: row-reverse;
+     }
+
+     .our-mission-right {
+          padding: 0 2rem;
+     }
+
+     .our-mission-body .our-mission-heading {
+          text-align: left;
+          width: 90%
+     }
+
+     /* Our People Styling */
+
+     .our-people-section {
+          background-color: rgba(0, 0, 0, 80%);
+          display: flex;
+          padding: 1,5rem 2rem;
+          justify-content: center;
+     }
+
+     .our-people-container {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          gap: 2rem;
+          padding: 1.25rem 0;
+          
+     }
+
+     .our-people-header {
+          text-align: center;
+          color:#fff;
+          padding: 0;
+     }
+
+     .bio-container, .bio-body {
+          display: flex;
+          margin: auto;
+          padding: 1.25rem;
+          max-width: 45rem;
+     }
+
+     .bio-container {
+          align-items: center;
+          justify-content: center;
+     }
+
+     .bio-body {
+          padding: 1.5rem 2rem;
+          flex-direction: column;
+          align-content: center;
+     }
+
+     .bio-image-placeholder {
+          width: 10rem;
+          height: 12rem;
+     }
+
+     .bio-body {
+          width: 75%
+     }
+
+
+     /* Gallery Styling */
+
+     .gallery-container {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2.5rem;
+          padding: 1rem 1.5rem;
+     }
+
+     .gallery-image {
+          width: 100%;
+          height: 100%;
+     }
+
+     .gallery-image-container {
+          width: 30%;
+          height: 15rem;
+     }
+
+     
+
+     /* Contact Section Styling */
+
+     .contact-section {
+          text-align: center;
+     }
+
+     /* Footer Section */
+
+     .footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(0, 0, 0, 80%);
+          height: 5rem;
+          color: #fff;
+     }
+
+}
+
+
+
+
+
